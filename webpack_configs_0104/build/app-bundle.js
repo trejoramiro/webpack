@@ -8192,8 +8192,25 @@
 /* 298 */
 /***/ function(module, exports) {
 
+	"use strict";
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
 	console.log("hello world");
-
+	
+	var Person = function Person(name, age) {
+	  _classCallCheck(this, Person);
+	
+	  Object.assign(this, { name: name, age: age });
+	};
+	
+	var person = new Person('tom sawyer', 44);
+	console.log(person);
+	var name = person.name,
+	    age = person.age;
+	
+	
+	console.log(name + " is " + age + " old!");
 
 /***/ }
 /******/ ]);
