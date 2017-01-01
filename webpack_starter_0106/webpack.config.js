@@ -11,7 +11,13 @@ const config = {
   },
   devtool: 'source-map',
   module: {
-    loaders: []
+    loaders: [{
+      test:/\.styl$/,
+      include: [
+        Path.resolve(process.cwd(), 'client/style/stylus')
+      ],
+      loader: 'style!css!stylus'
+    }]
   },
   resolve: {
     extension: ['', '.js'],
