@@ -2,25 +2,16 @@ const Path = require('path');
 
 const config = {
   entry: {
-    app: ['babel-polyfill','./client/js/app']
+    app: ['./client/js/app']
   },
   output: {
     path: './build',
+    publicPath: 'build/',
     filename: '[name]-bundle.js'
   },
   devtool: 'source-map',
   module: {
-    loaders: [{
-      test: /\.js$/,
-      include: [
-        Path.resolve(process.cwd(), 'client/js')
-      ],
-      exclude: 'node_modules',
-      loader: 'babel',
-      query: {
-        presets: ['es2015']
-      }
-    }]
+    loaders: []
   },
   resolve: {
     extension: ['', '.js'],
