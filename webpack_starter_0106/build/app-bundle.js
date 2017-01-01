@@ -90,7 +90,7 @@
 	
 	
 	// module
-	exports.push([module.id, "* {\n  box-sizing: border-box;\n}\nbody {\n  background-color: #ccc;\n}\n", ""]);
+	exports.push([module.id, "* {\n  box-sizing: border-box;\n}\nbody {\n  background-color: #ccc;\n}\ndiv.col {\n  border: 1px solid #e6e6e6;\n  border-radius: 5px 5px 5px 5px;\n  padding: 10px;\n}\np {\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n}\n", ""]);
 	
 	// exports
 

@@ -1,4 +1,6 @@
 const Path = require('path');
+// request plugin from node_modules folder
+const Autoprefixer = require('autoprefixer-stylus')
 
 const config = {
   entry: {
@@ -22,6 +24,13 @@ const config = {
   resolve: {
     extension: ['', '.js'],
     modulesDirectories: ['node_modules']
+  },
+  stylus: {
+    use: [
+      Autoprefixer({
+        browsers: ['last 2 versions']
+      })
+    ]
   }
 };
 
