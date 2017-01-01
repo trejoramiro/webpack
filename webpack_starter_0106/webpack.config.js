@@ -21,6 +21,15 @@ const config = {
         Path.resolve(process.cwd(), 'client/style/stylus')
       ],
       loader: 'style!css!stylus'
+    }, {
+      test: /\.(png|jpg)$/,
+      include: [
+        Path.resolve(process.cwd(), 'client/style')
+      ],
+      loader: 'file',
+      query: {
+        name: '[hash].[ext]'
+      }
     }]
   },
   resolve: {
