@@ -2,6 +2,8 @@ const Path = require('path');
 // request plugin from node_modules folder
 const Autoprefixer = require('autoprefixer-stylus')
 
+const jeet = require('jeet')
+
 const config = {
   entry: {
     app: ['./client/js/app']
@@ -29,7 +31,8 @@ const config = {
     use: [
       Autoprefixer({
         browsers: ['last 2 versions']
-      })
+      }),
+      jeet()
     ]
   }
 };

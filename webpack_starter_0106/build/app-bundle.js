@@ -90,7 +90,7 @@
 	
 	
 	// module
-	exports.push([module.id, "* {\n  box-sizing: border-box;\n}\nbody {\n  background-color: #ccc;\n}\ndiv.col {\n  border: 1px solid #e6e6e6;\n  border-radius: 5px 5px 5px 5px;\n  padding: 10px;\n}\np {\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n}\n", ""]);
+	exports.push([module.id, "* {\n  box-sizing: border-box;\n}\nbody {\n  background-color: #ccc;\n}\ndiv.col {\n  border: 1px solid #e6e6e6;\n  border-radius: 5px 5px 5px 5px;\n  padding: 10px;\n  float: left;\n  clear: none;\n  text-align: inherit;\n  width: 48.5%;\n  margin-left: 0%;\n  margin-right: 3%;\n}\ndiv.col::after {\n  content: '';\n  display: table;\n  clear: both;\n}\ndiv.col:last-child {\n  margin-right: 0%;\n}\np {\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  text-align: center;\n}\n", ""]);
 	
 	// exports
 
