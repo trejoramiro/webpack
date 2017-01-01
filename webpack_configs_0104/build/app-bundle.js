@@ -8190,7 +8190,7 @@
 
 /***/ },
 /* 298 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	
@@ -8211,6 +8211,16 @@
 	
 	
 	console.log(name + " is " + age + " old!");
+	
+	var view = __webpack_require__(299);
+	console.log(view);
+	document.body.innerHTML = view;
+
+/***/ },
+/* 299 */
+/***/ function(module, exports) {
+
+	module.exports = "\n<div class=\"container\">\n  <p class=\"highlight bold\">This is some simple Jade markdown.</p><a href=\"http://www.google.com\">Google</a>\n  <p>Some new content</p>\n</div>"
 
 /***/ }
 /******/ ]);
